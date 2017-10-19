@@ -8,7 +8,7 @@ ENV DOCKERFILE_VERSION  171019
 # Gitbook & libs
 
 RUN apt-get update && apt-get install -y \
-    wget xvfb imagemagick libgl1-mesa-glx libxcomposite1 \
+    xz-utils wget xvfb imagemagick libgl1-mesa-glx libxcomposite1 \
  && rm -rf /var/lib/apt/lists/*
 
 
