@@ -1,18 +1,14 @@
-# consup gitbook
-# node.js v6
-#
-
-FROM tenderpro/nodejs
+FROM tenderpro/nodejs:0.5
 
 MAINTAINER Alexey Kovrizhkin <lekovr+tpro@gmail.com>
 
-ENV DOCKERFILE_VERSION  171017
+ENV DOCKERFILE_VERSION  171019
 
 # -------------------------------------------------------------------------------
 # Gitbook & libs
 
 RUN apt-get update && apt-get install -y \
-    xvfb imagemagick  libgl1-mesa-glx libxcomposite1 \
+    xvfb imagemagick libgl1-mesa-glx libxcomposite1 \
  && rm -rf /var/lib/apt/lists/*
 
 
